@@ -399,10 +399,42 @@ button {
   padding: 60px 0;
 }
 
+.footer > .container {
+  display: flex;
+}
+
+.footer .social-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer .social-link:hover {
+  background-color: #2196f3;
+}
+
 .footer-logo {
   display: inline-block;
   color: var(--white-color);
   margin-bottom: 20px;
+}
+
+.footer .social-insta {
+  background-image: url('../image/icons/footer/instagram.svg');
+}
+
+.footer-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.join {
+  padding-top: 12px;
+  margin-left: 95px;
 }
 
 .adress li {
