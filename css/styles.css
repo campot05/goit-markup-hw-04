@@ -213,6 +213,33 @@ button {
   margin-right: 0;
 }
 
+.privilege-item::before {
+  display: block;
+  content: '';
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  background-position: center;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+}
+
+.icon-attention::before {
+  background-image: url('../image/icons/antenna.svg');
+}
+
+.icon-punctual::before {
+  background-image: url('../image/icons/clock.svg');
+}
+
+.icon-plan::before {
+  background-image: url('../image/icons/diagram.svg');
+}
+
+.icon-tech::before {
+  background-image: url('../image/icons/astronaut.svg');
+}
+
 .section-title {
   color: var(--title-text-color);
   font-family: 'Roboto';
