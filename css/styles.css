@@ -127,7 +127,8 @@ button {
   letter-spacing: 0.02em;
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
   color: var(--accent-color);
 }
 
@@ -380,16 +381,22 @@ button {
 .clients-item {
   width: calc((100% - 150px) / 6);
   margin-right: 30px;
-  border: 1px solid #afb1b8;
-  border-radius: 4px;
+  text-align: center;
+}
+
+.clients-item:last-of-type {
+  margin-right: 0;
 }
 
 .clients-link {
   display: block;
   padding: 16px 32px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
 }
 
-.clients-item:hover {
+.clients-link:hover,
+.clients-link:focus {
   border: 1px solid #2196f3;
 }
 /* footer */
@@ -407,7 +414,8 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer .social-link:hover {
+.footer .social-link:hover,
+.footer .social-link:focus {
   background-color: #2196f3;
 }
 
@@ -419,6 +427,18 @@ button {
 
 .footer .social-insta {
   background-image: url('../image/icons/footer/instagram.svg');
+}
+
+.footer .social-twitter {
+  background-image: url('../image/icons/footer/twitter.svg');
+}
+
+.footer .social-fb {
+  background-image: url('../image/icons/footer/facebook.svg');
+}
+
+.footer .social-linkedin {
+  background-image: url('../image/icons/footer/linkedin.svg');
 }
 
 .footer-title {
@@ -452,7 +472,8 @@ button {
   line-height: 1.71;
 }
 
-.adress .link:hover {
+.adress .link:hover,
+.adress .link:focus {
   color: var(--accent-color);
 }
 
