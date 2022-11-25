@@ -131,6 +131,24 @@ button {
   color: var(--accent-color);
 }
 
+.contacts-link::before {
+  content: '';
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.icon-mail::before {
+  background-image: url('../image/icons/mail.svg');
+}
+
+.icon-phone::before {
+  width: 10px;
+  height: 16px;
+  background-image: url('../image/icons/phone.svg');
+}
 /* hero */
 
 .hero {
