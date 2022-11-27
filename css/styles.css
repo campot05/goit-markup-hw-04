@@ -132,16 +132,7 @@ button {
   color: var(--accent-color);
 }
 
-.mail {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
-.tel {
-  width: 10px;
-  height: 16px;
+.icon {
   fill: currentColor;
   margin-right: 10px;
 }
@@ -218,11 +209,6 @@ button {
   margin-bottom: 30px;
 }
 
-.privilege-icon {
-  width: 70px;
-  height: 70px;
-}
-
 .section-title {
   color: var(--title-text-color);
   font-family: 'Roboto';
@@ -284,6 +270,9 @@ button {
   background-color: var(--white-color);
   text-align: center;
   padding-bottom: 30px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .our-team-item:last-of-type {
@@ -330,8 +319,6 @@ button {
   display: inline-block;
   width: 44px;
   height: 44px;
-  background-position: center;
-  background-repeat: no-repeat;
   border-radius: 50%;
   padding-top: 12px;
   color: #afb1b8;
@@ -345,8 +332,6 @@ button {
 }
 
 .social-icon {
-  width: 20px;
-  height: 20px;
   fill: currentColor;
 }
 
@@ -370,14 +355,31 @@ button {
 .clients-link {
   display: block;
   padding: 16px 32px;
+  /* width: 170px;
+  height: 92px; */
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: #afb1b8;
 }
 
 .clients-link:hover,
 .clients-link:focus {
   border: 1px solid #2196f3;
+  color: var(--accent-color);
 }
+
+.icon-wrapper {
+  width: 106px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-icon {
+  fill: currentColor;
+}
+
 /* footer */
 
 .footer {
@@ -390,7 +392,9 @@ button {
 }
 
 .footer .social-link {
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.1);
+  color: white;
 }
 
 .footer .social-link:hover,
@@ -402,22 +406,6 @@ button {
   display: inline-block;
   color: var(--white-color);
   margin-bottom: 20px;
-}
-
-.footer .social-insta {
-  background-image: url('../image/icons/footer/instagram.svg');
-}
-
-.footer .social-twitter {
-  background-image: url('../image/icons/footer/twitter.svg');
-}
-
-.footer .social-fb {
-  background-image: url('../image/icons/footer/facebook.svg');
-}
-
-.footer .social-linkedin {
-  background-image: url('../image/icons/footer/linkedin.svg');
 }
 
 .footer-title {
@@ -512,6 +500,11 @@ button {
   margin-right: 30px;
   margin-bottom: 30px;
   border: 1px #eeeeee solid;
+}
+
+.portfolio-item:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-item:nth-child(3n) {
