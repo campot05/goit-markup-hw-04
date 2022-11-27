@@ -316,11 +316,12 @@ button {
 }
 
 .social-link {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  padding-top: 12px;
   color: #afb1b8;
 }
 
@@ -502,7 +503,8 @@ button {
   border: 1px #eeeeee solid;
 }
 
-.portfolio-item:hover {
+.portfolio-link:hover,
+.portfolio-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
@@ -519,9 +521,9 @@ button {
   display: block;
 }
 
-/* .portfolio-link {
+.portfolio-link {
   display: block;
-} */
+}
 
 .portfolio-title {
   color: var(--title-text-color);
